@@ -1,0 +1,30 @@
+data visualization "Math Test 1 Grade Distribution" {
+    GraphType: Bar Graph
+    X Axis: (A, B, C, D, F)
+    Y Axis: 15
+    Number of A Grades: 5
+    Number of B Grades: 8
+    Number of C Grades: 10
+    Number of D Grades: 4
+    Number of F Grades: 2
+    Title: Math Test 1 Grades
+    X Axis Title: Grade Category
+    Y Axis Title: Number of Students
+    File Name: mathtest1graph.jpg
+}
+
+Create Math Test 1 Grade Distribution
+
+data visualization "Math Test 1 Pie Chart"{
+    GraphType: Pie Chart
+    Number of Total Students: 29
+    Number of A Grades: 5
+    Number of B Grades: 8
+    Number of C Grades: 10
+    Number of D Grades: 4
+    Number of F Grades: 2
+    Title: Math Test 1 Grades
+    File Name: mathtest1pie.jpg
+}
+
+Create Math Test 1 Pie Chart

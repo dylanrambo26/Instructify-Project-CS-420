@@ -1,0 +1,38 @@
+grading "Math Test 1" {
+    Test Type: Multiple Choice
+    Number of Questions: 5
+    Grade Report File: gradereport.txt
+    Recipient Email: example@example.com
+    Grading Scale: Math Test 1 Grading Scale
+}
+Test {
+    Correct Answers: (a,b,d,a,c)
+    Student Answers: (a,d,d,b,c)
+}
+
+Grading Scale "Math Test 1 Grading Scale"{
+    A: 93
+    B: 83
+    C: 73
+    D: 60
+    F: 50
+}
+
+Grade Math Test 1
+Send Email For Math Test 1
+
+grading "Math Test 2"{
+    Test Type: True/False
+    Number of Questions: 5
+    Grade Report File: gradereport2.txt
+    Recipient Email: example@example.com
+    Grading Scale: Math Test 1 Grading Scale
+}
+
+Test {
+    Correct Answers: (True,False,False,True,False)
+    Student Answers: (True,False,True,True,False)
+}
+
+Grade Math Test 2
+Send Email For Math Test 2

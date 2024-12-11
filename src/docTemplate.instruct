@@ -1,0 +1,22 @@
+lesson "Geography Lesson" {
+    Lesson Type: Document
+    File Name: geographylesson.docx
+}
+
+Document Content {
+    Title: United States Geography
+    Paragraph 1: "Northeastern Region"
+    Paragraph 1 Style: ("Bold", "16pt", "Times New Roman")
+    Paragraph 2: "Notes:"
+    Add 8 Empty Lines
+    Paragraph 3: "Pacific Region"
+    Paragraph 3 Style: ("Bold", "16pt", "Times New Roman")
+    Paragraph 4: "Notes:"
+    Add 8 Empty Lines
+    Paragraph 5: "Southern Region"
+    Paragraph 5 Style: ("Bold", "16pt", "Times New Roman")
+    Paragraph 6: "Notes:"
+    Add 8 Empty Lines
+}
+
+Create Geography Lesson

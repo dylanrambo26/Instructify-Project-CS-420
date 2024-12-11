@@ -1,0 +1,28 @@
+lesson "Geography Lesson" {
+    Lesson Type: Slides
+    Slide Amount: 4
+    File Name: geographylesson.pptx
+}
+
+Slides {
+    Title Slide: United States Geography
+    Geography Lesson Slide 1: Northeastern Region
+    Geography Lesson Slide 2: Pacific Region
+    Geography Lesson Slide 3: Southern Region
+}
+
+Slide Content {
+    Slide 1 Image Location: Below Title Slide Title
+    Slide 1 Image: usmap.jpg
+    Slide 2 Image Location: Right Half
+    Slide 2 Bullet Points: ("Is the region with the highest population density", "Site of the first battles of the American Revolution", "GDP in 2022 was 5.1 Trillion")
+    Slide 2 Image: northeastus.jpg
+    Slide 3 Image Location: Left Half
+    Slide 3 Bullet Points: ("Contains California which is the most populous state at 39 million", "Known for its tectonic activity along the ring of fire", "Very diverse landscapes")
+    Slide 3 Image: pacificus.jpg
+    Slide 4 Image Location: Right Half
+    Slide 4 Bullet Points: ("Landscapes include Appalachian Mountains, Mississippi River, coastal plains, and the Gulf of Mexico", "Known for its unique cultural contributions")
+    Slide 4 Image: southernus.jpg
+}
+
+Create Geography Lesson

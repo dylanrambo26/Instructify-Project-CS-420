@@ -1,0 +1,100 @@
+Program:
+   statements*=Statements
+;
+
+Statements:
+   Methods|SingleStatement
+;
+
+Methods:
+   Lesson|Slides|SlideContent|DocumentContent|Grading|Test|GradingScale|DataVisualization
+;
+Lesson:
+   'lesson' className=STRING '{'
+      singleStatement+=SingleStatement
+   '}' 
+;
+
+Slides:
+   'Slides' '{'
+      singleStatement+=SingleStatement
+   '}'
+;
+
+SlideContent:
+   'Slide Content' '{'
+      singleStatement+=SingleStatement
+   '}'
+;
+
+DocumentContent:
+   'Document Content' '{'
+      singleStatement+=SingleStatement
+   '}'
+;
+Grading:
+   'grading' className=STRING '{'
+      singleStatement+=SingleStatement
+   '}'
+;
+
+Test:
+   'Test' '{'
+      singleStatement+=SingleStatement
+   '}'
+;
+GradingScale:
+   'Grading Scale' className=STRING '{'
+      singleStatement+=SingleStatement
+   '}'
+;
+
+DataVisualization:
+   'data visualization' className=STRING '{'
+      singleStatement+=SingleStatement
+   '}'
+;
+
+SingleStatement:
+   Assignment|Command
+;
+
+Assignment:
+   name=ID ':' type=Type
+;
+
+Type:
+   Object|Literal
+;
+Object:
+   email=Email|list=List
+;
+
+Literal:
+   'Slides'|'Document'|'Multiple Choice'|'True/False'|INT|ID|STRING
+;
+
+List:
+   '(' listItems+=Item (',' listItems+=Item)* ')'
+;
+
+Item:
+   Answers|GradeStrings|STRING
+;
+Answers:
+   'a' | 'b' | 'c' | 'd'|'True'|'False'
+;
+
+GradeStrings:
+   'A' | 'B' | 'C' | 'D' |'F'
+;
+
+Command:
+  name=ID
+;
+
+Email:
+   /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/
+;
+
+ID: /[a-zA-Z0-9]+([a-zA-Z0-9\. ]*)/;
